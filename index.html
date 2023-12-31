@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Wish a new and best year for you </title>
+    <style>
+    @media (max-width: 768px) {
+    body {
+    font-size: 1rem;
+   }
+
+    .title-container {
+    flex-direction: column; 
+  }
+
+.container {
+  display: flex; 
+  flex-wrap: wrap;
+}
+    }
+
+
+
+  body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: rgb(210, 164, 56);
+  font-weight: bold ;
+  border: black;
+  font-size: 50px;
+
+}
+body > .subtitle-container {
+position: absolute;
+top: 50px;
+right:0; 
+font-size: 20px;
+color: rgb(10, 76, 76);
+font-family: 'Courier New', Courier, monospace;
+
+}
+img{
+   
+  position: absolute;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; 
+  
+  height: 100%;
+}
+.title-container .word {
+  opacity: 0; /* Initially hidden */
+  animation-duration: 1s; /* Adjust animation duration as desired */
+  animation-fill-mode: forwards; /* Keep final state after animation */
+}
+
+.title-container .word:nth-child(1) {
+  animation-name: fade-in-left;
+  animation-delay: 0.5s;
+}
+
+.title-container .word:nth-child(2) {
+  animation-name: fade-in-top;
+  animation-delay: 1s; 
+}
+
+.title-container .word:nth-child(3) {
+  animation-name: fade-in-right;
+  animation-delay: 1.5s; 
+  
+}
+.title-container .word:nth-child(4) {
+  animation-name: fade-in-right;
+  animation-delay: 2s; 
+  
+}
+.title-container .word:nth-child(5) {
+  animation-name: fade-in-right;
+  animation-delay: 2.5s; 
+  
+}
+.title-container .word:nth-child(6) {
+  animation-name: fade-in-right;
+  animation-delay: 3s; 
+  
+}
+.subtitle-container .word:nth-child(7){
+    animation-name: fade-in-right;
+  animation-delay: 3.5s; 
+  
+}
+
+@keyframes fade-in-left {
+  from { opacity: 0; transform: translateX(-100px); } 
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-in-top {
+  from { opacity: 0; transform: translateY(-100px); } 
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-right {
+  from { opacity: 0; transform: translateX(100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+#my-footer {
+  position: absolute; /* Keep footer at the bottom of the viewport */
+  bottom: -250px;
+  width: 100%;
+  background-color: #584e23; /* Adjust background color as needed */
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center; /* Center align content */
+  color: aliceblue;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title-container">
+        <span class="word" data-direction="left">Happy</span>
+        <span class="word" data-direction="top">New</span>
+        <span class="word" data-direction="right">Year</span>
+        <span class="word" data-direction="right">For</span>
+        <span class="word" data-direction="right">Marti</span>
+        <span class="word" data-direction="right">And Beloved</span>
+
+      </div>
+      
+  <div class="subtitle-container">
+    <span class="word" data-direction="bottom">From Hanna Samuel</span>
+  </div>
+  <img src="./wish.jpg" alt="Happy New Year Image" class="hidden-image">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
+</body>
+<footer id="my-footer">
+    <p ><a href="nansamuel@gmail.com">Contact me</a></p>
+    <p>I Love you, My Aunt!</p>
+  </footer>
+  
+</html>
+
+</html>
